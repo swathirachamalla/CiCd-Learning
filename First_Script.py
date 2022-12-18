@@ -3,7 +3,7 @@ from datetime import datetime,timedelta
 import os
 import pytz
 print("Executing First script")
-g = Github("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")
+g = Github("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")
 repo = g.get_repo("swathirachamalla/CiCd-Learning")
 Branch= repo.get_branch("Development")
 sha =Branch.commit.sha  
