@@ -3,7 +3,7 @@ from datetime import datetime,timedelta
 import os
 import pytz
 print("Executing First script")
-g = Github("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")
+g = Github("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")
 repo = g.get_repo("swathirachamalla/CiCd-Learning")
 Branch= repo.get_branch("Development")
 sha =Branch.commit.sha  
@@ -14,4 +14,4 @@ c = datetime(end_time.year,end_time.month,end_time.day,end_time.hour,end_time.mi
 print("c")
 if c > timedelta(minutes=5):
     print("Executing Script.sh")
-    os.system("script.sh")
+    os.system("bash script.sh")
